@@ -1,0 +1,309 @@
+main {
+	position: relative;
+}
+.ba-section {
+	padding: 95px 0 100px;
+	&__title {
+		font-family: $primary-font;
+		font-size: 36px;
+		color: $text-color;
+		padding-top: 20px;	
+		
+		
+		&--light {
+			color: #fff;
+			
+		}
+	}
+
+}
+.ba-btn {
+	font-family: $secondary-font;
+	font-style: italic;
+	font-size: 20px;
+	border: 1px solid #fff;
+	color: #fff;
+	padding: 12px 45px;
+	text-decoration: none;
+	transition: 0.2s ease-in;
+ 	transition-property: color, border-color;
+ 	display: inline-block;
+	&:hover,
+	&:focus {
+		color: $primary-color;
+		border-color: $primary-color;
+		text-decoration: none;
+	}
+	&--gray {
+		border: 1px solid $text-color;
+		color: $text-color;
+		&:hover,
+		&:focus {
+		color: $primary-color;
+		border-color: $primary-color;
+		text-decoration: none;
+	}
+	}
+
+}
+
+//header & nav
+.ba-header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	
+	padding-right: 10px;	
+}
+.ba-navigation {
+	.navbar-brand img {
+		padding-left: 10px;
+	}
+	
+	&__list {
+		padding-top: 20px;
+		
+	}
+	
+	&__link {
+		font-family: $primary-font;
+		font-size: 24px;
+		font-weight: 600;
+		color: #fff !important;
+		transition: 0.2s ease-in;
+ 		transition-property: color;
+		&:hover,
+		&:focus {
+			color: $text-color !important;
+		}
+	}
+}
+
+//hero section
+.ba-hero {
+	background: $primary-color url(../img/hero-bg.jpg) center center no-repeat;
+	background-size: cover;
+	padding: 350px 0 495px;
+	color: #fff;
+	
+} 
+
+.ba-site-title {
+	font-family: $primary-font;
+	font-size: 72px;
+	font-weight: 700;
+		
+}
+.ba-site-subtitle {
+	font-family: $secondary-font;
+	font-style: italic;
+	font-size: 30px;	
+	padding-top: 5px;
+	line-height: 1.3;
+}
+
+//section about
+.ba-about {
+	padding-top: 130px;
+	background-color: $bg-color;
+	padding-bottom: 30px;
+	&__block {
+		background: $primary-color url(../img/about.jpg) center center no-repeat;
+		height: 555px;
+		width: 370px;
+		padding-top: 70px;
+	}
+	&__logo {
+		display: block;
+		margin: 0 auto;
+	}
+	&__describe {
+		font-family: $secondary-font;
+		font-size: 20px;
+		padding-top: 70px;
+		line-height: 1.25;
+		text-align: center;
+		.ba-btn {
+			margin-top: 80px;		
+		}
+	}
+	p {
+		text-align: left;
+	}
+	p + p{
+		padding-top:10px;
+	}
+}
+
+.ba-services {
+	background-color: $bg-color;
+	padding-bottom: 0;
+	&__block {
+		background:  url(../img/services.jpg) center center no-repeat;
+		height: 800px;
+		color: #fff;
+		padding-top: 110px;
+	
+		p {	
+
+			font-weight: 400;
+			font-size: 18px;
+		}		
+	}
+	&__title {
+		margin-top: 0;
+		margin-bottom: 110px;
+	}
+}
+.ba-article {
+	padding: 90px 0 133px;
+	font-family: $secondary-font ;
+	color: $text-color;
+	&__title {
+		font-size: 24px;
+		font-weight: 700;
+	}
+	p {
+		font-size: 18px;
+		font-style: italic;		
+	}
+	
+	&--dark {
+		background-color: #dbdbdb;
+	}
+}
+
+.ba-works {
+	background: $primary-color url(../img/works-bg.jpg) center center no-repeat;
+	background-size: cover;
+	padding-top: 40px;
+	h2 {
+		margin-top: 10px;
+		margin-bottom: 60px;
+	}
+}
+
+.ba-works-slider {
+	position: relative;
+	.ba-button {
+		background-color: transparent;
+		border: none;
+		position: absolute;
+			top: 50%;
+		&--prev {
+			left: -80px;
+		}
+		&--next {
+			right: -70px;
+		}
+	}
+	img {
+		display: inline-block;
+	}
+}
+.slick-dots {
+	margin: 0;
+	li {
+		list-style-type: none;
+		display: inline-block;	
+		font-size: 0;
+		width: 10px;
+		height: 10px;
+		background-color: transparent;
+		border: 1px solid white ;
+	}
+}
+
+// team section 
+.ba-team {
+	background-color: #ebebeb;
+	&__box {
+		background-color: #fff;
+	}
+	&__icon {
+		top: -50%;
+	}
+	&__name {
+		font-size: 24px;
+		font-weight: 700;
+		color: #9f9acf;
+		text-transform: uppercase;
+	}
+}
+
+
+
+
+
+
+
+
+.ba-map {
+	height: 500px;
+}
+
+
+.ba-block {
+	height: 400px;
+	background-color: gold;
+	position: relative;
+	overflow: hidden;
+}
+.ba-box {
+	width: 200px;
+	background-color: purple;
+	color: white;
+	line-height: 80px;
+	position: absolute;
+	top: 60%;
+	right: 0;
+	transform: translate(80%, -50%);
+	transition: transform 0.3s ease-in;
+	cursor: pointer;
+	&:hover {
+		transform: translate(0, -50%);
+	}
+	.pull-right {
+		width: 80%;
+		
+	}
+	.pull-left {
+		width: 20%;
+	}
+
+}
+.ba-box-2 {
+	width: 200px;
+	background-color: blue;
+	color: white;
+	line-height: 80px;
+	position: absolute;
+	top: 30%;
+	right: 0;
+	transform: translate(80%, -50%);
+	transition: transform 0.3s ease-in;
+	cursor: pointer;
+	&:hover {
+		transform: translate(0, -50%);
+	}
+	.pull-right {
+		width: 80%;
+		
+	}
+	.pull-left {
+		width: 20%;
+	}
+	
+}
+.ba-slide {
+	background-color: green;
+	height: 300px;
+	width: 100%;
+	margin: 10px;
+}
+.navbar-default {
+	background-color: transparent;
+	border: none;
+
+}
